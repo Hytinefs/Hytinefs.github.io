@@ -1,0 +1,635 @@
+<!DOCTYPE html><html><head>
+      <title>Mythology</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:///c:\Users\DELL\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.8.13\crossnote\dependencies\katex\katex.min.css">
+      
+      
+      
+      
+      
+      <style>
+      code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.4;-moz-tab-size:8;-o-tab-size:8;tab-size:8;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.8em;overflow:auto;border-radius:3px;background:#f5f5f5}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal;background:#f5f5f5}.token.blockquote,.token.comment{color:#969896}.token.cdata{color:#183691}.token.doctype,.token.macro.property,.token.punctuation,.token.variable{color:#333}.token.builtin,.token.important,.token.keyword,.token.operator,.token.rule{color:#a71d5d}.token.attr-value,.token.regex,.token.string,.token.url{color:#183691}.token.atrule,.token.boolean,.token.code,.token.command,.token.constant,.token.entity,.token.number,.token.property,.token.symbol{color:#0086b3}.token.prolog,.token.selector,.token.tag{color:#63a35c}.token.attr-name,.token.class,.token.class-name,.token.function,.token.id,.token.namespace,.token.pseudo-class,.token.pseudo-element,.token.url-reference .token.variable{color:#795da3}.token.entity{cursor:help}.token.title,.token.title .token.punctuation{font-weight:700;color:#1d3e81}.token.list{color:#ed6a43}.token.inserted{background-color:#eaffea;color:#55a532}.token.deleted{background-color:#ffecec;color:#bd2c00}.token.bold{font-weight:700}.token.italic{font-style:italic}.language-json .token.property{color:#183691}.language-markup .token.tag .token.punctuation{color:#333}.language-css .token.function,code.language-css{color:#0086b3}.language-yaml .token.atrule{color:#63a35c}code.language-yaml{color:#183691}.language-ruby .token.function{color:#333}.language-markdown .token.url{color:#795da3}.language-makefile .token.symbol{color:#795da3}.language-makefile .token.variable{color:#183691}.language-makefile .token.builtin{color:#0086b3}.language-bash .token.keyword{color:#0086b3}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:'Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:'\00a0'}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+      <!-- The content below will be included at the end of the <head> element. --><script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    // your code here
+  });
+</script></head><body for="html-export">
+    
+    
+      <div class="crossnote markdown-preview  ">
+      
+<h3 id="titans-to-olympus">Titans to Olympus </h3>
+<h4 id="the-first-gods">The first gods </h4>
+<ol>
+<li>Chaos
+<ul>
+<li>Erebus (Darkness) &amp; Nyx (Night)
+<ul>
+<li>Aether (Brightness) &amp; Hemera (Day)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Gaea
+<ul>
+<li>Uranus (Sky) &amp; Gaea
+<ul>
+<li>12 Titans
+<ol>
+<li>Oceanus</li>
+<li>Coeus</li>
+<li>Crius</li>
+<li>Hyperion</li>
+<li>Iapetus</li>
+<li>Theia</li>
+<li>Rhea</li>
+<li>Themis</li>
+<li>Mnemosyne</li>
+<li>Phoebe</li>
+<li>Tethys</li>
+<li><strong>Cronus</strong></li>
+</ol>
+</li>
+<li>Cyclops
+<ol>
+<li>Brontes</li>
+<li>Steropes</li>
+<li><strong>Arges</strong></li>
+</ol>
+</li>
+<li>Hecatoncheires (Hundred-Handers)</li>
+</ul>
+</li>
+<li>Ourea (Mountain)</li>
+<li>Pontus (Sea)</li>
+</ul>
+</li>
+<li>Tartarus</li>
+<li>Eros</li>
+</ol>
+<h4 id="children-of-gaea-and-uranus-blood-and-uranus-genitals">Children of Gaea and Uranus' blood, and Uranus' genitals </h4>
+<p>Cronus castrated Uranus, from Uranus' blood came the <strong>Erinneys</strong> and others, from Uranus' genitals slpattered into the sea came the goddess <strong>Aphrodite</strong> (Venus).</p>
+<h4 id="descendants-of-echidna-and-typhon">Descendants of Echidna and Typhon </h4>
+<p>Gaea &amp; Tartarus <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>  </mtext><mo>⟹</mo><mtext>  </mtext></mrow><annotation encoding="application/x-tex">\implies</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.549em;vertical-align:-0.024em;"></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">⟹</span><span class="mspace" style="margin-right:0.2778em;"></span></span></span></span> Typhon</p>
+<p>Typhon &amp; Echidna (half-nymph half-snake)</p>
+<ol>
+<li>Orthus: a two-headed dog who guarded Geryon's cattle and was killed by <strong>Heracles</strong></li>
+<li><strong>Cerberus</strong>: the three-headed dog who guards the gates of the Underworld and was carried into the upper world by <strong>Heracles</strong></li>
+<li>Hydra: killed by <strong>Heracles</strong></li>
+</ol>
+<p>Typhon's Children</p>
+<ol>
+<li>Chimera: its body was a compound of the <u>lion</u> and the <u>goat</u>, and the hind part a <u>dragon</u>'s, killed by <strong>Bellerophon</strong> with <strong>Pegasus</strong></li>
+<li>Sphinx</li>
+<li>Nemean Lion: <strong>Heracles</strong>' first task</li>
+</ol>
+<h4 id="descendants-of-the-titans">Descendants of the Titans </h4>
+<p>From <strong>Cronus</strong> and his older sister <strong>Rhea</strong> came</p>
+<ol>
+<li><strong>Hestia</strong> (Vesta)</li>
+<li><strong>Demeter</strong> (Ceres)</li>
+<li><strong>Hera</strong> (Jove)</li>
+<li><strong>Hades</strong> (Pluto)</li>
+<li><strong>Poseidon</strong> (Neptune)</li>
+<li><strong>Zeus</strong> (Jupiter)</li>
+</ol>
+<p>From Iapetos and the Oceanis Clymene came</p>
+<ol>
+<li><strong>Atlas</strong></li>
+<li>Menoetius</li>
+<li><strong>Prometheus</strong></li>
+<li><strong>Epimetheus</strong></li>
+</ol>
+<h4 id="children-of-zeus-and-others">Children of Zeus and Others </h4>
+<p>Zeus &amp; Demeter <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>  </mtext><mo>⟹</mo><mtext>  </mtext></mrow><annotation encoding="application/x-tex">\implies</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.549em;vertical-align:-0.024em;"></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">⟹</span><span class="mspace" style="margin-right:0.2778em;"></span></span></span></span>​ Persephone</p>
+<p>Zeus &amp; Titan Mnemosyne <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>  </mtext><mo>⟹</mo><mtext>  </mtext></mrow><annotation encoding="application/x-tex">\implies</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.549em;vertical-align:-0.024em;"></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">⟹</span><span class="mspace" style="margin-right:0.2778em;"></span></span></span></span>​ nine Muses</p>
+<p>Zeus &amp; Titan Leto (<strong>Latona</strong>) <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>  </mtext><mo>⟹</mo><mtext>  </mtext></mrow><annotation encoding="application/x-tex">\implies</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.549em;vertical-align:-0.024em;"></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">⟹</span><span class="mspace" style="margin-right:0.2778em;"></span></span></span></span> <strong>Apollo</strong> and <strong>Artemis</strong> (Diana)</p>
+<p>Zeus &amp; Hera <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>  </mtext><mo>⟹</mo><mtext>  </mtext></mrow><annotation encoding="application/x-tex">\implies</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.549em;vertical-align:-0.024em;"></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">⟹</span><span class="mspace" style="margin-right:0.2778em;"></span></span></span></span>​ <strong>Ares</strong> (Mars), Hebe and Eileithyia</p>
+<p>Zeus's head <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>  </mtext><mo>⟹</mo><mtext>  </mtext></mrow><annotation encoding="application/x-tex">\implies</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.549em;vertical-align:-0.024em;"></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">⟹</span><span class="mspace" style="margin-right:0.2778em;"></span></span></span></span>​ <strong>Athena</strong> (Minerva)</p>
+<p>Hera <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>  </mtext><mo>⟹</mo><mtext>  </mtext></mrow><annotation encoding="application/x-tex">\implies</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.549em;vertical-align:-0.024em;"></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">⟹</span><span class="mspace" style="margin-right:0.2778em;"></span></span></span></span>​ <strong>Hephaestus</strong> (Vulcan)</p>
+<p>Zeus &amp; Atlas' daughter Maia <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>  </mtext><mo>⟹</mo><mtext>  </mtext></mrow><annotation encoding="application/x-tex">\implies</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.549em;vertical-align:-0.024em;"></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">⟹</span><span class="mspace" style="margin-right:0.2778em;"></span></span></span></span>​ <strong>Hermes</strong> (Mercury)</p>
+<p>Zeus &amp; Semele (daughter of Cadmus) <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>  </mtext><mo>⟹</mo><mtext>  </mtext></mrow><annotation encoding="application/x-tex">\implies</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.549em;vertical-align:-0.024em;"></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">⟹</span><span class="mspace" style="margin-right:0.2778em;"></span></span></span></span> <strong>Dionysus</strong> (Bacchus)</p>
+<p>Ares &amp; Aphrodite <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>  </mtext><mo>⟹</mo><mtext>  </mtext></mrow><annotation encoding="application/x-tex">\implies</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.549em;vertical-align:-0.024em;"></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">⟹</span><span class="mspace" style="margin-right:0.2778em;"></span></span></span></span> <strong>Eros</strong> (Cupid)</p>
+<h3 id="major-olympic-gods-and-goddess">Major Olympic gods and goddess </h3>
+<ol>
+<li>
+<p><strong>Zeus</strong> (Jupiter)</p>
+</li>
+<li>
+<p><strong>Hera</strong> (Jove)</p>
+</li>
+<li>
+<p><strong>Demeter</strong> (Ceres)</p>
+</li>
+<li>
+<p><strong>Aphrodite</strong> (Venus)</p>
+</li>
+<li>
+<p><strong>Poseidon</strong> (Neptune)</p>
+</li>
+<li>
+<p><strong>Athena</strong> (Minerva)</p>
+</li>
+<li>
+<p><strong>Apollo</strong></p>
+<p>Apollo &amp; Daphne <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>→</mo></mrow><annotation encoding="application/x-tex">\to</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.3669em;"></span><span class="mrel">→</span></span></span></span> a Laurel tree</p>
+</li>
+<li>
+<p><strong>Artemis</strong> (Diana)</p>
+</li>
+<li>
+<p><strong>Ares</strong> (Mars)</p>
+</li>
+<li>
+<p><strong>Hephaestus</strong> (Vulcan)</p>
+</li>
+<li>
+<p><strong>Hermes</strong> (Mercury)</p>
+</li>
+<li>
+<p><strong>Hestia</strong> (Vesta) or <strong>Dionysus</strong> (Bacchus) (with Ariadne)</p>
+</li>
+<li>
+<p><strong>Hades</strong> (Pluto)</p>
+</li>
+<li>
+<p><strong>Eros</strong> (Cupid)</p>
+<p>Eros &amp; Psyche</p>
+</li>
+</ol>
+<h4 id="prometheus-and-epimetheus">Prometheus and Epimetheus </h4>
+<p>Created man and other animals and gave them unique gifts.</p>
+<p>Prometheus brought down fire of the chariot of the sun to man with the aid of Minerva.</p>
+<p>Zeus made woman to punish man for accepting the fire.</p>
+<p>The first woman was <strong>Pandora</strong> who opened the jar of Epimetheus.</p>
+<ol>
+<li>The Golden Age</li>
+<li>The Silver Age</li>
+<li>The Brazen Age</li>
+<li>The Iron Age</li>
+</ol>
+<p>Zeus summoned the gods. The gods took the way of the <strong>Milky Way</strong>.</p>
+<p>Prometheus was chained on <strong>Mount Caucasus</strong>.</p>
+<h3 id="zeus-and-his-lovers">Zeus and his lovers </h3>
+<p><strong>Latona</strong>: mother of Apollo and Diana; turned the <strong>rustics</strong> into <strong>frogs</strong>.</p>
+<p><strong>Leda</strong>: daughter of the Aetolian King Thestius and became Spartan queen and seduced by Zeus in the guise of a <strong>swan</strong>, and born <strong>Helen</strong>, <strong>Clytemnestra</strong>, and Castor and Pollux.</p>
+<p><strong>Io</strong>: turned into a <mark>heifer</mark> watched by Argus; Mercury killed Argus; Hera sent a <strong>gadfly</strong> to torment Io; Jupiter turned her back.</p>
+<p><strong>Semele</strong>: mother of Bacchus.</p>
+<p><strong>Callisto</strong>: turned into a bear by Juno, and turned into <strong>the Great and Little Bear</strong> by Jupiter.</p>
+<p><strong>Danae</strong>: locked in a bronze chamber and Zeus came to her in the form of golden rain and <strong>Perseus</strong> was born.</p>
+<p><strong>Alcmene</strong>: gave birth to <strong>Heracles</strong>.</p>
+<p><strong>Europa</strong>: carried away by Zeus in the disguise of a <strong>bull</strong>.</p>
+<p><strong>Ganymede</strong>: a Trojan boy, whom Jupiter, in the disguise of an <strong>eagle</strong>, seized and carried off from the midst of his playfellows on Mount Ida.</p>
+<p><strong>Ceres</strong>: gave birth to <strong>Proserpine</strong>.</p>
+<h3 id="apollo-and-artemis">Apollo and Artemis </h3>
+<p><strong>Syrinx</strong> and <strong>Pan</strong></p>
+<p><strong>Silenus</strong>: schoolmaster and foster-father of Bacchus and was taken to Midas when he was drunk.</p>
+<p><strong>Midas</strong>: whatever he touch should be changed into gold, recovered after he washed his guilt in the River Pactolus. He became a worshipper of <strong>Pan</strong> (the god of the fields) . Once Pan wanted to compare his music with Apollo. All the audiences thought Apollo won but Midas. So Apollo turned Midas' ears into <strong>ass</strong>' ears. Only his <u>hair-dresser</u> knew this secret.</p>
+<p><strong>Hyacinthus</strong> and <strong>Apollo</strong>: Apollo was very fond of a youth named Hyacinthus. One day they played the game of throwing <strong>discus</strong>, the discus thrown by Apollo was bounded by the earth and struck Hyacinthus' forehead. His blood dropped on the herbage and the herbage became flowers. It was also said that <strong>Zephyrus</strong> (the West wind) who was jealous of Apollo changed the trajectory of the quoit.</p>
+<p><strong>Clytie</strong>: a water-nymph and in love with <strong>Apollo</strong>, she gazed the sun nine days without eating or drinking and became the <strong>sunflower</strong>.</p>
+<p><strong>Marsyas</strong>: <strong>Minerva</strong> invented the <strong>flute</strong> but was laughed by Cupid when playing. She threw the flute down to the earth and it was picked up by Marsyas. He blew it and wanted to challenge <strong>Apollo</strong>. Apollo won and punished him by <strong>flay</strong>ing him alive.</p>
+<p><strong>Endymion</strong>: a beautiful youth who fed his <strong>flock</strong> on Mount Latmos. One calm, clear night, <strong>Diana</strong> looked down and saw him sleeping. The goddess was conquered by his beauty and went down to watch over his sleeping. Endymion became the symbol of young poet. His fancy and his heart seeking in vain for that which can satisfy them, finding his favorite hour in the quiet moonlight,</p>
+<p><strong>Orion</strong>: the son of <strong>Neptune</strong>, a handsome giant and a mighty hunter. He loved Merope but her father constantly deferred his consent. Orion attempted to gain her by violence but his behavior made her father angry. Her father made Orion drunk and blinded him. Orion came to <strong>Vulcan</strong>'s forge. Vulcan sent Kedalion as his guide, and Orion went to the sun-god and restored his sight. After he dwelt as a hunter with <strong>Diana</strong> and was about to marry her. <strong>Apollo</strong> was unhappy and tricked Diana to shoot Orion's head. Diana placed him among the stars with a <u>girdle</u>, sword and <strong>Sirius</strong>, his dog, and the Pleiads.</p>
+<p><strong>Actaeon</strong> and <strong>Diana</strong>: Actaeon was the <strong>son</strong> of King <strong>Cadmus</strong>. Once he hunted the stag in the mountains with his companions, when they were resting Actaeon strayed into <strong>Diana</strong>'s cave and saw her washing. Diana turned him into a <strong>stag</strong> and Actaeon was killed by his own followers.</p>
+<p><strong>Hippolytus</strong>: <strong>Theseus</strong>' son and was loved by Theseus' wife Phaedra. Theseus imprecated the vengeance of Neptune upon him. <strong>Diana</strong> called <strong>Aesculapius</strong> to revive him and took him to Italy.</p>
+<p><strong>Aesculapius</strong>: <strong>Apollo</strong>'s son and had the power to restore the dead to life. Pluto was shocked and called Jupiter to launch a thunderbolt on him. Apollo was angry after his' son's dead and he punished the workers of Vulcan who made the thunderbolt. Jupiter condemned Apollo to serve for King <strong>Admetus</strong> for one year. Admetus married <strong>Alcestis</strong> with the help of Apollo but he caught a severe illness. The Fates permitted that someone could dead for him and only Alcestis was willing to. Just then <strong>Heracles</strong> came and forced the Death to resign his victim.</p>
+<p><strong>Phaeton</strong>: <strong>Apollo</strong>'s son. He wanted to prove his identity and requested his father to let him drive the chariot  for one day. But he could not control the chariot and burned the earth and the heaven. Zeus stroke him with his thunderbolt.</p>
+<h3 id="house-of-cadmus">House of Cadmus </h3>
+<h4 id="cadmus">Cadmus </h4>
+<p>After <strong>Europa</strong> was taken away by Zeus, <strong>Agenor</strong>, king of <strong>Phoenicia</strong> commanded his son <strong>Cadmus</strong> to search for his sister. Cadmus consulted <u>the oracle of Apollo</u> and followed a <strong>cow</strong> wandering until it stopped and built the city named <strong>Thebes</strong>. His servants went to find water and was killed by a dragon. Cadmus killed the dragon and a voice commanded him to sow <u>the (Mars' ) serpent's teeth</u> into the earth and then there was a harvest of <u>armed warriors</u>. They fought each other until five survivors left and they built Thebes.</p>
+<p>Cadmus obtained in marriage <strong>Harmonia</strong>, the daughter of <strong>Venus</strong>. Since Cadmus killed Mars' serpent, his daughters <strong>Semele</strong> and <strong>Ino</strong>, and his son <strong>Actaeon</strong> and <strong>Pentheus</strong>, all perished unhappily. Then Cadmus left Thebes and went to the country of the Enchelians. He and his wife became serpents.</p>
+<p><strong>King of Thebes</strong>: <strong>Cadmus</strong> <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>→</mo></mrow><annotation encoding="application/x-tex">\to</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.3669em;"></span><span class="mrel">→</span></span></span></span> <strong>Polydorus</strong> <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>→</mo></mrow><annotation encoding="application/x-tex">\to</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.3669em;"></span><span class="mrel">→</span></span></span></span> <strong>Labdacus</strong> <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>→</mo></mrow><annotation encoding="application/x-tex">\to</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.3669em;"></span><span class="mrel">→</span></span></span></span> <strong>Laius</strong> <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>→</mo></mrow><annotation encoding="application/x-tex">\to</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.3669em;"></span><span class="mrel">→</span></span></span></span> <strong>Oedipus</strong></p>
+<h4 id="antigone">Antigone </h4>
+<p>The daughter of <strong>Oedipus</strong>. She companied his wandering till he died and then returned to Thebes.</p>
+<p><strong>Seven against Thebes</strong>: Her brother <strong>Eteocles</strong> and <strong>Polynices</strong> agreed to share the kingdom between them. But Eteocles refused to surrender the kingdom to his brother. Polynices fled to <u>Adrastus, king of Argos</u>, who gave him an army to fight his claim to the kingdom.</p>
+<p><strong>Tiresias</strong>: a blind prophet. He saw <strong>Minerva</strong> bathing in his youth. The goddess deprived his sight but afterwards gave him the power to see the future.</p>
+<p>Eteocles and Polynices fought and fell by each other's hands. <u>Creon buried Eteocles but suffered Polynices' body.</u> Antigone buried Polynices' corpse and Creon judged her to be buried alive.</p>
+<h3 id="house-of-tantalus">House of Tantalus </h3>
+<p><img src="D:%5Cdownload%5CLineage_Tantalus.svg" alt="Lineage_Tantalus"></p>
+<h4 id="tantalus">Tantalus </h4>
+<p>He tried to trick the gods into eating his son, he was made to stand in a pool of water beneath a fruit tree with low branches, with the fruit ever eluding his grasp, and the water always receding before he could take a drink.</p>
+<p><strong>Sisyphus</strong>: The founder and king of Corinth who killed visitors to show off his power. Gods punished him to roll an <mark>boulder</mark> up a hill and it rolled back down every time it neared the top.</p>
+<p><strong>Ixion</strong>: The son of Ares. Zeus pitied him after his terrible sin and brought him to Olympus. But Ixion grew lustful to Hera. Zeus ordered Hermes to bind Ixion to a <u>winged fiery wheel</u> that was always spinning.</p>
+<h4 id="niobe">Niobe </h4>
+<p>Niobe was the queen of Thebes. During the annual celebration in honor of <strong>Latona</strong> and her offspring, <strong>Apollo</strong> and <strong>Diana</strong>, Niobe persuaded the people to cancel the worship. Latona called Apollo and Diana to punish Niobe. They killed all her seven children and seven daughters. Niobe was changed to stone with her tears streaming.</p>
+<h4 id="pelops">Pelops </h4>
+<p>King of Pisa, he was venerated in Olympia where his worships developed into the founding myth of the <strong>Olympic games</strong>.</p>
+<h4 id="tyndareus">Tyndareus </h4>
+<p>King of Spartan, <strong>Leda</strong>'s husband.</p>
+<h4 id="atreus-and-thyestes">Atreus and Thyestes </h4>
+<p>King of Mycenae. Atreus and his twin brother Thyestes were exiled by their father for murdering their half-brother Chrysippus in their desire for the throne of Olympia.</p>
+<h4 id="agamemnon">Agamemnon </h4>
+<p>Agamemnon, the general-in-chief of the Greeks, the brother of <strong>Menelaus</strong>. During his absence his wife Clytemnestra and her <mark>paramour</mark> planned to kill him at the <mark>banquet</mark>. Agamemnon's children, <strong>Electra</strong> sent <strong>Orestes</strong> secretly to his uncle Strophius, king of Phocis. Orestes grew up with the king's son <strong>Pylades</strong>. After Orestes grew up, he went back to Argos pretending to announce the death of Orestes and <mark>slew</mark> <strong>Aegisthus</strong> and <strong>Clytemnestra</strong>.</p>
+<p>The <strong>Erinyes</strong> (avenging goddess), seized upon Orestes from land to land. Pylades accompanied him. He finally took <mark>refuge</mark> with Minerva at Athens and was <mark>acquitted</mark> by the court vote and the command of Minerva. But the Erinyes still threatened to torment all inhabitants of Athens. Athena persuaded them to break the cycle of blood to blood while promising that the goddesses will receive due honor from the Athenians and Athena. The Erinyes' name was changed into the <strong>Eumenides</strong>.</p>
+<p><strong>Iphigenia</strong>, the daughter of Agamemnon, was a sacrifice to <strong>Artemis</strong> in the port of Aulis when Agamemnon killed a stag which was sacred to her. When she was to be sacrificed, Artemis snatched her away and placed a <mark>hind</mark> in her place.</p>
+<h4 id="minerva">Minerva </h4>
+<p>Minerva was the goddess of wisdom. She <mark>presided</mark> over the useful and <mark>ornamental</mark> arts. She was also the goddess of <u>defensive war</u>.</p>
+<p>Athens was her own city as the prize of a contest with <strong>Neptune</strong>. The tale ran that the first king of Athens, Cecrops, decided that the god who gave the most useful gift to mortals win. Neptune gave the <u>horses</u>; Minerva gave the <u>olive</u>.</p>
+<p><strong>Arachne</strong>, a maiden who was skillful in <u>weaving</u>, wanted to compare with Minerva. Minerva wove her contest with Neptune; Arachne wove the failings and errors of the gods: <strong>Leda</strong> and the swan, <strong>Danae</strong> and the golden shower, <strong>Europa</strong> and the bull. Minerva was <mark>infuriated</mark> and turned Arachne into a spider.</p>
+<h3 id="jason-and-the-golden-fleece">Jason and the golden fleece </h3>
+<p>In Thessaly a king and queen named <strong>Athamas</strong> and <strong>Nephele</strong>. They had two children. After a time Athamas grew indifferent to his wife. <strong>Mercury</strong> assisted Nephele and gave her a <mark>ram</mark> with a golden fleece. The ram took the children to the East. The girl <strong>Helle</strong> fell into the sea where was called the Hellespont. The boy <strong>Phryxus</strong> was hospitably received by Aeetes. Phryxus sacrificed the ram to Jupiter and gave the golden fleece to <strong>Aeetes</strong> who placed it in a <mark>consecrated grove</mark>, under the care of a sleepless dragon.</p>
+<p>There was another kingdom in Thessaly near to that of Athamas. The king <strong>Aeson</strong> surrendered his crown to his brother <strong>Pelias</strong> on condition that he should hold it only during the minority of his son, <strong>Jason</strong>. Peliad pretended he will yield it but suggested Jason to get the Golden Fleece in the kingdom of Colchis.</p>
+<p>Jason employed <strong>Argus</strong> to build him a vessel capable of containing fifty men named "<strong>Argo</strong>". A band of youths joined him including <strong>Hercules</strong>, <strong>Theseus</strong>, <strong>Orpheus</strong> and <strong>Nestor</strong>. They are called the <strong>Argonauts</strong>.</p>
+<p>They crossed the Symplegades or the Clashing Islands and arrived Colchis. King Aeetes agreed to give up the golden fleece if Jason would <mark>yoke</mark> to the <mark>plough</mark> two <u>fire-breathing bulls</u> with brazen feet, and sow <u>the teeth of the dragon</u> which Cadmus had slain. Jason had previously promised his marriage with <strong>Medea</strong>, daughter of the king who was  a powerful <mark>sorceress</mark>. Jason used Medea's spell to encounter safely the breath of the fire-breathing bulls and threw a stone to the armed army so that they fought each other. But Aeetes planned to attack the Argonauts. Medea told Jason and Jason took the golden fleece with Medea's aid of sleeping the dragon. They returned Thessaly, gave the golden fleece to Pelias and sacrificed the Argo to <strong>Neptune</strong>.</p>
+<h4 id="medea-and-jason">Medea and Jason </h4>
+<p>Jason wanted Medea to take some of his years and add it to his father's. Medea did it without cutting Jason's years. Pelias also wanted to grow his life. Medea pretended to agree but used a different spell. The trick was found out by Pelias. Medea ran away. Jason married <strong>Creusa</strong>, princess of Corinth. Medea sent a  poisoned <mark>robe</mark> as a gift to the bride and killed her own children, and set fire to the palace, and drove her chariot to Athens where she married King <strong>Aegeus</strong>, the father of <strong>Theseus</strong>.</p>
+<h4 id="nisus-and-scylla">Nisus and Scylla </h4>
+<p><strong>Minos</strong>, king of Crete, made war upon Megara. <strong>Nisus</strong> was king of Megara, and <strong>Scylla</strong> was his daughter. Megara stand as long as a certain <u>purple <mark>lock</mark></u> among the hair of King Nisus remained on his head. Scylla admired Minos and cut Nisus' purple lock and sacrifice the city to him. Minos thought this was a disgrace. He and his army left Megara. Scylla jumped into the sea and seized the rudder of Minos' ship. His father Nisus became a sea-eagle striking her.</p>
+<h4 id="echo-and-narcissus">Echo and Narcissus </h4>
+<h3 id="hercules">Hercules </h3>
+<p>Hercules was the son of <strong>Jupiter</strong> and <strong>Alcmena</strong>. Juno wanted to killed him when he was a babe. She sent two serpents to killed him but the babe <mark>strangled</mark> the serpents. By Juno's tricks he surrendered to Eurystheus and Eurystheus gave him several tasks called the "Twelve Labors of Hercules".</p>
+<ol>
+<li>
+<p><strong>Nemean lion</strong>.</p>
+</li>
+<li>
+<p><strong>Hydra</strong>. This monster <mark>ravaged</mark> the country of Argos.</p>
+</li>
+<li>
+<p>The cleaning of the <strong>Augean</strong> <mark>stables</mark>.</p>
+</li>
+<li>
+<p>Obtain the <u>girdle</u> of the queen of the <strong>Amazons</strong>.</p>
+</li>
+<li>
+<p>The <u>oxen</u> of <strong>Geryon</strong>, a monster with three bodies.</p>
+<p>The Pillars of Hercules. The oxen were guarded by the giant Eurytion and his two-headed dog. Hercules killed them and brought away the oxen.</p>
+</li>
+<li>
+<p>The <u>golden apples</u> of the <strong>Hesperides</strong>. Hercules went to Mount Atlas. He persuaded Atlas to find the golden apples for him while he would carry the Heaven during Atlas' absence.</p>
+</li>
+</ol>
+<p>Other <mark>exploits</mark>:</p>
+<ol>
+<li>Victory over <strong>Antaeus</strong>, son of Gaea, who was <mark>invincible</mark> if and only if remained in contact with his mother Earth. Hercules strangled him in the air.</li>
+<li>Slew <strong>Cacus</strong> the huge giant who stole part of the cattle of Hercules.</li>
+<li>Bringing Cerberus from the lower world, and obtaining the liberty of <strong>Theseus</strong>.</li>
+<li>Hercules killed his friend Iphitus in a fit of madness and became the slave of Queen Omphale for three years. During this service he wore the dress of a woman. After this he married <strong>Dejanira</strong>. When they came to a river, the Centaur Nessus wanted to carried Dejanira away but Hercules killed him. The dying Centaur told Dejanira to take a <mark>portion</mark> of his blood it might be used to preserve the love of her husband.</li>
+<li>Hercules was fond of a maiden named Iole. Dejanira <mark>steeped</mark> the white robe which Hercules would wear in the blood of Nessus and washed out all traces of it. The magic robe hurt Hercules and he was burned on Mount Ceta. After that he went into the Heaven.</li>
+</ol>
+<h4 id="achelous-and-hercules">Achelous and Hercules </h4>
+<p>The river god Achelous told his story to <strong>Theseus</strong>. He and other <mark>suitors</mark> strove to win <strong>Dejanira</strong>. At last he and Hercules left to fight each other. Achelous changed into a snake and a bull during the fight. And Hercules rent his <mark>horn</mark> from his head. The <strong>Naiads</strong> took it, consecrated it and filled it with fragrant flowers, called it "<strong>Cornucopia</strong>".</p>
+<h4 id="admetus-and-alcestis">Admetus and Alcestis </h4>
+<h3 id="theseus">Theseus </h3>
+<p>Theseus was the son of <strong>Aegeus</strong>, king of Athens, and of <strong>Aethra</strong>, daughter of the king of <strong>Troezen</strong>. He was brought up in Troezen. Aegeus placed his sword and shoes under a large stone and directed Aethra to sent his son to him when he grew up. Theseus took the sword and shoes. Despite of his grandfather's suggestion, he took his adventure.</p>
+<ol>
+<li><strong>Periphetes</strong>, son of Vulcan, a savage who armed with a club of iron and killed the pass-by travelers.</li>
+<li><strong>Procrustes</strong>, or the Stretcher. He had an iron bedstead to suffer the pass-by travelers.</li>
+</ol>
+<p>When Theseus arrived Athens, <strong>Medea</strong> deluded Aegeus to killed this young stranger. Aegeus recognized his sword and sent Medea away to Asia.</p>
+<p>At that time Athens was forced to sacrifice seven youths and seven maidens every year as the food of the <strong>Minotaur</strong>, a monster dwelt in <strong>Daedalus</strong>' <mark>labyrinth</mark>. Theseus offered himself as one of the victims. The ship departed under <u>black sails</u>, as usual, which Theseus promised his father to change for <u>white</u>, in case of his returning victorious. Minos' daughter <strong>Ariadne</strong> admired him and gave him a sword and a clue of thread.</p>
+<p>Theseus killed Minotaur and left the labyrinth and took Ariadne away. One night he dreamed <strong>Minerva</strong> who warned him that Ariadne was doomed to be the wife of <strong>Bacchus</strong>. He left Ariadne at the island of Naxos.</p>
+<p>When Theseus arrived Athens, he forgot to hang the white sails. The old king Aegeus jumped into the sea and the sea was named the <strong>Aegean Sea</strong>.</p>
+<p>Other exploits:</p>
+<ol>
+<li><mark>Expedition</mark> against the Amazons. After <strong>Hercules</strong>' attack, Theseus assailed them before their recovery and took their queen <strong>Antiope</strong>. The Amazons fought back till the city of Athens but Theseus defended.</li>
+<li>The friendship between Theseus and <strong>Pirithous</strong>. They both wanted to married Jupiter's daughter. Theseus took <strong>Helen</strong> who was still a child. Pirithous wanted to get <strong>Persephone</strong>. Pluto seized them on an enchanted rock at his palace gate.</li>
+<li>After Antiope's death, Theseus married <strong>Phaedra</strong>, daughter of Minos. Phaedra saw in <strong>Hippolytus</strong>, the son of Theseus.</li>
+</ol>
+<h4 id="daedalus">Daedalus </h4>
+<p>Daedalus built the labyrinth for King Minos, but afterwards was shut up in a tower. He fabricated wings for himself and his young son <strong>Icarus</strong>. Daedalus warned Icarus not to fly too high for the heat will melt the wax on the wings nor too low for the damp will wet the wings. But Icarus flew too high and fell down and dead.</p>
+<p>Daedalus grew <mark>arrogance</mark> and refused to teach his nephew <strong>Perdix</strong>. When they were together one day on the top of a high tower, Daedalus pushed him off. But <strong>Minerva</strong> changed Perdix into a bird called <strong>Partridge</strong>.</p>
+<h4 id="orpheus-and-eurydice">Orpheus and Eurydice </h4>
+<p>Orpheus was the son of <strong>Apollo</strong> and the <strong>Muse Calliope</strong>. Apollo gave him his <mark>lyre</mark>. After his marriage with <strong>Eurydice</strong>, one day Eurydice wandered with the nymphs, she was seen by the shepherd Aristaeus who chased her. Eurydice was bit by a snake during her fleeing.</p>
+<p>Orpheus went down to Tartarus and sang to persuade Pluto to release Eurydice to the upper world. During his songs, <strong>Tantalus</strong>, <strong>Ixion</strong>, the <mark>vulture</mark> (of Prometheus), the daughters of <strong>Danaus</strong>, and <strong>Sisyphus</strong> all stopped. Pluto promised him with one condition that he should not look back to her until they have reached the upper air. When they almost arrived, Orpheus looked back and Eurydice returned to Tartarus.</p>
+<p>Orpheus was killed by drunk maidens. <strong>Jupiter</strong> put his lyre among stars. And his soul came to Tartarus and lived with Eurydice.</p>
+<h3 id="perseus">Perseus </h3>
+<ol>
+<li>
+<p><strong>Perseus' birth</strong></p>
+<p>Perseus was the son of <strong>Jupiter</strong> and <strong>Danae</strong>. His grandfather <strong>Acrisius</strong>, alarmed by an oracle which had told him that his daughter's child would be the instrument of his death, caused the mother and child to be shut up in a chest and set adrift on the sea. A fisherman found them and took them to <strong>Polydectes</strong>, king of Seriphus.</p>
+</li>
+<li>
+<p><strong>Perseus and Medusa</strong></p>
+<p>When Perseus grew up, Polydectes sent him to conquer <strong>Medusa</strong>. Medusa was a beautiful maiden but wanted to challenge Minerva with her beauty. Minerva changed her into a Gorgon. <strong>Minerva</strong> lent Perseus her <u>shield</u> and <strong>Mercury</strong> lent him his <u>winged shoes</u>. Perseus used the reflection on the shield to kill Medusa.</p>
+</li>
+<li>
+<p><strong>Perseus and Atlas</strong></p>
+<p>After the slaughter of Medusa, Perseus went to the western limit of the earth and met <strong>Atlas</strong>. Atlas remembered an ancient prophecy that a son of Jove would rob him of his golden apples so he refused to receive Perseus. Perseus used the head of Medusa and turned Atlas into stone.</p>
+</li>
+<li>
+<p><strong>Perseus and the sea-monster</strong></p>
+<p>Perseus arrived at the country of the Aethiopians of which <strong>Cepheus</strong> was king. <strong>Cassiopeia</strong> the queen, had dared to compare herself to the Sea-Nymphs. They sent a sea-monster to ravage the coast. Cepheus was directed by the oracle to sacrifice his daughter <strong>Andromeda</strong> to the monster. Perseus killed the sea-monster and married Andromeda.</p>
+</li>
+<li>
+<p><strong>Perseus' wedding feast</strong></p>
+<p>During Perseus' wedding, <strong>Phineus</strong>, the <mark>betrothed</mark> of the virgin, came with his party demanding the maiden as his own. He and his men fought with Perseus' men. Perseus took out the head of Medusa and turned his enemies into stone.</p>
+</li>
+</ol>
+<h4 id="pegasus-and-chimera">Pegasus and Chimera </h4>
+<p>When <strong>Perseus</strong> cut off <strong>Medusa</strong>'s head, the blood sinking into the earth produced the <u>winged horse</u> <strong>Pegasus</strong>. <strong>Minerva</strong> caught and <mark>tamed</mark> him and presented him to the <strong>Muses</strong>. The fountain Hippocrene, on the Muses' mountain Helicon, was opened by a kick from his <mark>hoof</mark>.</p>
+<p>The <strong>Chimera</strong> was a fearful monster, breathing fire. The fore part of its body was a compound of the lion and the goat, and the hind part a dragon's. King <strong>Iobates</strong> sought for some hero to destroy it. A young warrior named <strong>Bellerophon</strong> came with the letters from <strong>Proetus</strong>. Iobates sent Bellerophon to kill Chimera. Under the suggestion of the prophet, Bellerophon slept in Minerva's temple and Minerva gave him a golden <mark>bridle</mark> in the dream. Bellerophon took control of Pegasus and beat Chimera with the help of Pegasus.</p>
+<p>But Bellerophon grew arrogance and wanted to ride the horse into the Heaven. <strong>Zeus</strong> sent a <u>gadfly</u> to bite Pegasus and made him throw his rider. Bellerophon fell down and became lame and blind and died miserably.</p>
+<h3 id="trojan-war">Trojan war </h3>
+<h4 id="trojan">Trojan </h4>
+<ul>
+<li><strong>Paris</strong></li>
+<li><strong>Priam</strong></li>
+<li><strong>Hector</strong></li>
+<li><strong>Helen</strong></li>
+<li><strong>Memnon</strong></li>
+<li><strong>Penthesilea</strong>: queen of the Amazons, came with a band of female warriors.</li>
+<li><strong>Laocoon</strong>: the priest of Neptune.</li>
+</ul>
+<h4 id="greek">Greek </h4>
+<ul>
+<li><strong>Agamemnon</strong></li>
+<li><strong>Achilles</strong>: his army was called the <strong>Myrmidons</strong>.</li>
+<li><strong>Patroclus</strong>: Achilles' dearest friend, killed by Hector who thought he was Achilles.</li>
+<li><strong>Odysseus</strong>: made the plan of the great wooden horse.</li>
+<li><strong>Ajax</strong>: hit <strong>Hector</strong> with a huge stone.</li>
+<li><strong>Protesilaus</strong>: the first victim, killed by <strong>Hector</strong>. His wife was <strong>Laodamia</strong>.</li>
+</ul>
+<h4 id="aurora-and-tithonus">Aurora and Tithonus </h4>
+<p>Aurora fell in love with <strong>Tithonus</strong>, son of <strong>Laomedon</strong>, king of Troy. She prevailed on Jupiter to grant him immortality but forgot to join his youth in the gift. Finally Tithonus became a grasshopper.</p>
+<p><strong>Memnon</strong> was their son, king of Aethiopians. During the Trojan war, he killed Antilochus, but then Achilles appeared and killed him.</p>
+<p>Aurora commanded her brothers, the <strong>Winds</strong>, to convey his body to the banks of the river Esepus. In the night Aurora came with the <strong>Hours</strong> and the <strong>Pleiads</strong>. The <strong>Night</strong> spread the heaven with clouds. Aethiopians built a tomb for him. <strong>Jupiter</strong> caused the <u>sparks</u> and <u><mark>cinders</mark></u> of his funeral pile to be turned into birds, which, dividing into two flocks, fought over the pile till they fell into the flames. Every year at the anniversary of his death they return and celebrate his obsequies in like manner.</p>
+<h3 id="odysseus">Odysseus </h3>
+<p>Troy <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>→</mo></mrow><annotation encoding="application/x-tex">\to</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.3669em;"></span><span class="mrel">→</span></span></span></span> Ismarus <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>→</mo></mrow><annotation encoding="application/x-tex">\to</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.3669em;"></span><span class="mrel">→</span></span></span></span> Land of the Lotus Eaters <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>→</mo></mrow><annotation encoding="application/x-tex">\to</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.3669em;"></span><span class="mrel">→</span></span></span></span> Land of the Cyclops (<strong>Polyphemus</strong>) <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>→</mo></mrow><annotation encoding="application/x-tex">\to</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.3669em;"></span><span class="mrel">→</span></span></span></span> Aeolus Island (gave him a leathern bag which trapped dangerous winds) <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>→</mo></mrow><annotation encoding="application/x-tex">\to</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.3669em;"></span><span class="mrel">→</span></span></span></span> <strong>Circe</strong>'s Island <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>→</mo></mrow><annotation encoding="application/x-tex">\to</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.3669em;"></span><span class="mrel">→</span></span></span></span> Island of the Sirens <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>→</mo></mrow><annotation encoding="application/x-tex">\to</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.3669em;"></span><span class="mrel">→</span></span></span></span> <strong>Scylla</strong> (six heads) and <strong>Charybdis</strong> (gulf) <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>→</mo></mrow><annotation encoding="application/x-tex">\to</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.3669em;"></span><span class="mrel">→</span></span></span></span> Helio's Island (the <u>cattle</u> of Hyperion) <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>→</mo></mrow><annotation encoding="application/x-tex">\to</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.3669em;"></span><span class="mrel">→</span></span></span></span> Calypso's (a sea-nymph) Island <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>→</mo></mrow><annotation encoding="application/x-tex">\to</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.3669em;"></span><span class="mrel">→</span></span></span></span> Scheria <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>→</mo></mrow><annotation encoding="application/x-tex">\to</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.3669em;"></span><span class="mrel">→</span></span></span></span> Ithaca</p>
+<h3 id="lovers">Lovers </h3>
+<h4 id="pyramus-and-thisbe">Pyramus and Thisbe </h4>
+<p>Mulberry</p>
+<h4 id="hero-and-leander">Hero and Leander </h4>
+<p>Leander loved Hero and swam across the strait separating Asia and Europe nightly to meet Hero.</p>
+<p>Hero used a torch to guide him. But one tempest night Leander failed.</p>
+<h4 id="syrinx-and-pan">Syrinx and Pan </h4>
+<p><strong>Syrinx</strong> was a nymph loved by <strong>Satyr</strong>s and spirits of the wood and worshipped <strong>Diana</strong>.</p>
+<p><strong>Pan</strong> chased Syrinx and Syrinx turned into a tuft of <strong>reed</strong>s.</p>
+<p>Pan took the reeds and made an instrument.</p>
+<p>The music instrument Syrinx or Pandean pipes was used by <strong>Mercury</strong> to kill <strong>Argus</strong>.</p>
+<h4 id="baucis-and-philemon">Baucis and Philemon </h4>
+<p>An oak and a linden tree beside Zeus' temple.</p>
+<h4 id="hippomenes-and-atlanta">Hippomenes and Atlanta </h4>
+<p><strong>Minerva</strong> gave three golden apples to Hippomenes to help him win the race with Atlanta.</p>
+<h4 id="cephalus-and-procris">Cephalus and Procris </h4>
+<h4 id="acis-and-galatea">Acis and Galatea </h4>
+<p>Acis was loved by <strong>Polyphemus</strong>.</p>
+
+      </div>
+      <div class="md-sidebar-toc">
+<div class="md-toc">
+<details style="padding:0;;padding-left:0px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#titans-to-olympus" class="md-toc-link"><p>Titans to Olympus</p>
+</a>
+          </summary>
+        <div>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#the-first-gods" class="md-toc-link">
+            <p>The first gods</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#children-of-gaea-and-uranus-blood-and-uranus-genitals" class="md-toc-link">
+            <p>Children of Gaea and Uranus' blood, and Uranus' genitals</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#descendants-of-echidna-and-typhon" class="md-toc-link">
+            <p>Descendants of Echidna and Typhon</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#descendants-of-the-titans" class="md-toc-link">
+            <p>Descendants of the Titans</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#children-of-zeus-and-others" class="md-toc-link">
+            <p>Children of Zeus and Others</p>
+
+          </a></div>
+        </div>
+      </details>
+    <details style="padding:0;;padding-left:0px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#major-olympic-gods-and-goddess" class="md-toc-link"><p>Major Olympic gods and goddess</p>
+</a>
+          </summary>
+        <div>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#prometheus-and-epimetheus" class="md-toc-link">
+            <p>Prometheus and Epimetheus</p>
+
+          </a></div>
+        </div>
+      </details>
+    <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:18px">
+          <a href="#zeus-and-his-lovers" class="md-toc-link">
+            <p>Zeus and his lovers</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:18px">
+          <a href="#apollo-and-artemis" class="md-toc-link">
+            <p>Apollo and Artemis</p>
+
+          </a></div><details style="padding:0;;padding-left:0px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#house-of-cadmus" class="md-toc-link"><p>House of Cadmus</p>
+</a>
+          </summary>
+        <div>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#cadmus" class="md-toc-link">
+            <p>Cadmus</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#antigone" class="md-toc-link">
+            <p>Antigone</p>
+
+          </a></div>
+        </div>
+      </details>
+    <details style="padding:0;;padding-left:0px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#house-of-tantalus" class="md-toc-link"><p>House of Tantalus</p>
+</a>
+          </summary>
+        <div>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#tantalus" class="md-toc-link">
+            <p>Tantalus</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#niobe" class="md-toc-link">
+            <p>Niobe</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#pelops" class="md-toc-link">
+            <p>Pelops</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#tyndareus" class="md-toc-link">
+            <p>Tyndareus</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#atreus-and-thyestes" class="md-toc-link">
+            <p>Atreus and Thyestes</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#agamemnon" class="md-toc-link">
+            <p>Agamemnon</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#minerva" class="md-toc-link">
+            <p>Minerva</p>
+
+          </a></div>
+        </div>
+      </details>
+    <details style="padding:0;;padding-left:0px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#jason-and-the-golden-fleece" class="md-toc-link"><p>Jason and the golden fleece</p>
+</a>
+          </summary>
+        <div>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#medea-and-jason" class="md-toc-link">
+            <p>Medea and Jason</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#nisus-and-scylla" class="md-toc-link">
+            <p>Nisus and Scylla</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#echo-and-narcissus" class="md-toc-link">
+            <p>Echo and Narcissus</p>
+
+          </a></div>
+        </div>
+      </details>
+    <details style="padding:0;;padding-left:0px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#hercules" class="md-toc-link"><p>Hercules</p>
+</a>
+          </summary>
+        <div>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#achelous-and-hercules" class="md-toc-link">
+            <p>Achelous and Hercules</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#admetus-and-alcestis" class="md-toc-link">
+            <p>Admetus and Alcestis</p>
+
+          </a></div>
+        </div>
+      </details>
+    <details style="padding:0;;padding-left:0px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#theseus" class="md-toc-link"><p>Theseus</p>
+</a>
+          </summary>
+        <div>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#daedalus" class="md-toc-link">
+            <p>Daedalus</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#orpheus-and-eurydice" class="md-toc-link">
+            <p>Orpheus and Eurydice</p>
+
+          </a></div>
+        </div>
+      </details>
+    <details style="padding:0;;padding-left:0px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#perseus" class="md-toc-link"><p>Perseus</p>
+</a>
+          </summary>
+        <div>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#pegasus-and-chimera" class="md-toc-link">
+            <p>Pegasus and Chimera</p>
+
+          </a></div>
+        </div>
+      </details>
+    <details style="padding:0;;padding-left:0px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#trojan-war" class="md-toc-link"><p>Trojan war</p>
+</a>
+          </summary>
+        <div>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#trojan" class="md-toc-link">
+            <p>Trojan</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#greek" class="md-toc-link">
+            <p>Greek</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#aurora-and-tithonus" class="md-toc-link">
+            <p>Aurora and Tithonus</p>
+
+          </a></div>
+        </div>
+      </details>
+    <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:18px">
+          <a href="#odysseus" class="md-toc-link">
+            <p>Odysseus</p>
+
+          </a></div><details style="padding:0;;padding-left:0px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#lovers" class="md-toc-link"><p>Lovers</p>
+</a>
+          </summary>
+        <div>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#pyramus-and-thisbe" class="md-toc-link">
+            <p>Pyramus and Thisbe</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#hero-and-leander" class="md-toc-link">
+            <p>Hero and Leander</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#syrinx-and-pan" class="md-toc-link">
+            <p>Syrinx and Pan</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#baucis-and-philemon" class="md-toc-link">
+            <p>Baucis and Philemon</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#hippomenes-and-atlanta" class="md-toc-link">
+            <p>Hippomenes and Atlanta</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#cephalus-and-procris" class="md-toc-link">
+            <p>Cephalus and Procris</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#acis-and-galatea" class="md-toc-link">
+            <p>Acis and Galatea</p>
+
+          </a></div>
+        </div>
+      </details>
+    
+</div>
+</div>
+      <a id="sidebar-toc-btn">≡</a>
+    
+    
+    
+    
+    
+    
+<script>
+
+var sidebarTOCBtn = document.getElementById('sidebar-toc-btn')
+sidebarTOCBtn.addEventListener('click', function(event) {
+  event.stopPropagation()
+  if (document.body.hasAttribute('html-show-sidebar-toc')) {
+    document.body.removeAttribute('html-show-sidebar-toc')
+  } else {
+    document.body.setAttribute('html-show-sidebar-toc', true)
+  }
+})
+</script>
+      
+  
+    </body></html>
