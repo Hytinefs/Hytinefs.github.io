@@ -1,0 +1,33 @@
+<svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" width="521px" height="444px">
+<path id="Lines" fill="none" stroke="#231F20" stroke-miterlimit="10" d="M277,63.001v26 M77.5,79.334h385 M462.5,79.334v12 M77.5,79.334v12 M277,145.063v26 M77.5,161.396h385 M462.5,161.396v12 M77.5,161.396v12 M277,219.465v26 M54.333,245.465H355.25 M462.5,221.996v35.465 M54.333,245.465v12 M210.457,245.465v12 M355.25,245.465v12 M355.25,305.511v23.988 M55.016,305.511v23.988 M54.333,377.568H355.25 M210.457,305.5v72.06 M77.5,377.965v12 M162.567,377.965v12 M241.627,377.965v12 M330.698,377.965v12"/>
+<g id="text">
+<text x="277" y="37.832" text-anchor="middle" font-family="Liberation Serif, serif" font-weight="bold" font-size="15">
+	<tspan x="277" y="37.832">Tantalos</tspan>
+	<tspan x="77.5" y="110.333">Broteas</tspan>
+	<tspan x="277" y="110.333">Pelops</tspan>
+	<tspan x="462.5" y="110.333">Niobe</tspan>
+	<tspan x="77.5" y="192.332">Pittheus</tspan>
+	<tspan x="277" y="192.332">Atreus</tspan>
+	<tspan x="462.5" y="192.332">Thyestes</tspan>
+	<tspan x="54.333" y="276.332">Anaxibia</tspan>
+	<tspan x="210.46" y="276.332">Agamemnon</tspan>
+	<tspan x="355.254" y="276.332">Menelaos</tspan>
+	<tspan x="355.254" y="347.8311">Hermione</tspan>
+	<tspan x="54.333" y="347.8311">Pylades</tspan>
+	<tspan x="77.5" y="408.332">Iphigeneia</tspan>
+	<tspan x="162.57" y="408.332">Elektra</tspan>
+	<tspan x="241.63" y="408.332">Orestes</tspan>
+	<tspan x="330.7" y="408.332">Chrysothemis</tspan>
+	<tspan x="462.5" y="276.332">Aigisthos</tspan>
+</text>
+<text x="277" y="55.8311" text-anchor="middle" font-family="Liberation Serif, serif" font-style="italic" font-size="15">
+	<tspan x="277" y="55.8311">× Dione</tspan>
+	<tspan x="277" y="128.332">× Hippodameia</tspan>
+	<tspan x="277" y="210.3311">× Airope</tspan>
+	<tspan x="462.5" y="210.3311">× Pelopeia</tspan>
+	<tspan x="54.333" y="294.3311">× Strophios</tspan>
+	<tspan x="210.46" y="294.3311">× Klytaimnestra</tspan>
+	<tspan x="355.254" y="294.3311">× Helena</tspan>
+</text>
+</g>
+</svg>
